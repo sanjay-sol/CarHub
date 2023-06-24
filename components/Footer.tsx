@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { CustomButton } from './CustomButton'
-
+import { footerLinks } from '@/constants'
 export const Footer = () => {
   return (
     <footer className='flex flex-col text-black-500 mt-5 border-t border-gray-500'>
@@ -15,7 +15,23 @@ export const Footer = () => {
                     All rights reserved  .
                 </p>
             </div>
-            
+            <div className='footer__links'>
+              {footerLinks.map((link)=>(
+                <div key={link.title} 
+                className='footer__link'>
+                  <h3  className='font-bold'>{link.title}</h3>
+                  {link.links.map((item)=>(
+                    <Link key={item.title}
+                    className='text-gray-500'
+                    href={item.url}
+                    >
+                      {item.title}
+                    </Link>
+                  ))}
+                </div>
+              ))}
+
+            </div>
         </div>
 
     </footer>
