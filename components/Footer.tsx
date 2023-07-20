@@ -12,7 +12,7 @@ export const Footer = () => {
                 <p className='text-base text-gray-700'>
 
                     CarHub <br />
-                    All rights reserved  .
+                    All rights reserved ©  .
                 </p>
             </div>
             <div className='footer__links'>
