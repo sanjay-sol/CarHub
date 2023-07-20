@@ -5,6 +5,13 @@ export default function Home() {
   return (
     <main className="overflow-hidden">
     <Hero/>
+    <div className='mt-12 padding-x padding-y max-width' id='discover'>
+      <div className='home_text-container'>
+        <h1 className='text-4xl font-extrabold'>Car Catalog</h1>
+        <p>explore the cars</p>
+
+      </div>
+    </div>
     </main>
   )
 }
