@@ -13,3 +13,22 @@ export interface SearchManufacturerProps{
 export interface CustomFilter{
     title?:string;
 }
+export interface CarProps {
+  
+    city_mpg:Number,
+class:String,
+combination_mpg:Number,
+cylinders:Number,
+displacement:Number,
+drive:String,
+fuel_type:String,
+highway_mpg:Number,
+make:String,
+model:String,
+transmission:String,
+year:Number,
+
+
+
+}
+

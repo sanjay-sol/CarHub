@@ -1,4 +1,4 @@
-import { CustomFilter, Hero, SearchBar } from '@/components'
+import { CarCard, CustomFilter, Hero, SearchBar } from '@/components'
 import { fetchCars } from '@/utils'
 import Image from 'next/image'
 
@@ -26,11 +26,15 @@ export default async function Home() {
       </div>
       { !isEmptyData ? (
         <section>
-          WE have cars
+          <div className='home__cars-wrapper'>
+            {allCars?.map((car)=>(
+              <CarCard car={car} />
+            ))}
+          </div>
         </section>
       ):(
         <div className='home__error-container'> 
-          <h1>Unable to load cars data...</h1>
+          <h1 className='text-black text-xl font-bold'>Unable to load cars data...</h1>
           <p>{allCars?.message}</p>
         </div>
       )}
