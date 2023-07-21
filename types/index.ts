@@ -10,3 +10,6 @@ export interface SearchManufacturerProps{
     manufacturer:String;
     setmanufacturer: (manufacturer:String)=> void;
 }
+export interface CustomFilter{
+    title?:string;
+}
