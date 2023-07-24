@@ -8,7 +8,7 @@ import {Dialog , Transition} from "@headlessui/react";
 import { getHash } from 'next/dist/server/image-optimizer';
 
 interface CarDetailsProps {
-    isOpen:Boolean;
+    isOpen:boolean;
     closeModal:()=> void;
     car:CarProps
 }

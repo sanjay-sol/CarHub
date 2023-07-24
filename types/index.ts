@@ -6,32 +6,30 @@ export interface CustomButtonProps{
     handleClick?:MouseEventHandler<HTMLButtonElement>;
     btnType?:"button" | "submit";
     textStyles?:string;
-    rightIcon?:String;
+    rightIcon?:string;
     isDisabled?:boolean;
 }
 export interface SearchManufacturerProps{
-    manufacturer:String;
-    setmanufacturer: (manufacturer:String)=> void;
+    manufacturer:string;
+    setmanufacturer: (manufacturer:string)=> void;
 }
 export interface CustomFilter{
     title?:string;
 }
 export interface CarProps {
   
-    city_mpg:Number,
-class:String,
-combination_mpg:Number,
-cylinders:Number,
-displacement:Number,
-drive:String,
-fuel_type:String,
-highway_mpg:Number,
-make:String,
-model:String,
-transmission:String,
-year:Number,
-
-
+    city_mpg:number,
+class:string,
+combination_mpg:number,
+cylinders:number,
+displacement:number,
+drive:string,
+fuel_type:string,
+highway_mpg:number,
+make:string,
+model:string,
+transmission:string,
+year:number,
 
 }
 

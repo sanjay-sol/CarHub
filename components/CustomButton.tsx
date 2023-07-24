@@ -21,8 +21,7 @@ export const CustomButton = ({title , containerStyles , handleClick , btnType , 
     >
    <span className={`flex-1 ${textStyles}` }>{title}</span>
    <div className='relative w-6 h-6'>
-    <Image 
-    src={rightIcon}
+    <Image  src={rightIcon}
     alt="right icon" fill
     className='object-contain'
     />
