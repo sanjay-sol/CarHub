@@ -28,5 +28,6 @@ export const calculateCarRent = (city_mpg: number, year: number) => {
   };
 
 export const generateCarImageUrl = (car:CarProps,angle?:string)=>{
+  
     
 }
